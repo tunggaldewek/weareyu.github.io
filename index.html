@@ -34,6 +34,13 @@ body{
     margin:auto;
 }
 
+/* WRAPPER VIDEO */
+.video-wrapper{
+    position:relative;
+    width:100%;
+}
+
+/* VIDEO */
 video{
     width:100%;
     border-radius:14px;
@@ -41,6 +48,30 @@ video{
     background:#111;
 }
 
+/* BANNER DI ATAS VIDEO */
+.banner-top{
+    position:absolute;
+    top:10px;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:999;
+    width:320px;
+    height:50px;
+    overflow:hidden;
+    border-radius:10px;
+    background:rgba(255,255,255,0.95);
+    box-shadow:0 0 15px rgba(0,0,0,0.5);
+}
+
+/* NATIVE ADS DI BAWAH VIDEO */
+.native-ad{
+    margin-top:18px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* TOMBOL */
 .button-area{
     margin-top:25px;
 }
@@ -64,12 +95,6 @@ video{
     100%{opacity:1;}
 }
 
-.ad-box{
-    margin-top:25px;
-    display:flex;
-    justify-content:center;
-}
-
 @media(max-width:480px){
 
     .title{
@@ -80,6 +105,11 @@ video{
         width:100%;
         font-size:18px;
         padding:15px;
+    }
+
+    .banner-top{
+        width:300px;
+        height:50px;
     }
 
 }
@@ -94,12 +124,48 @@ video{
         POV: healing era but still lowkey chaotic😨😮‍💨
     </div>
 
-    <video autoplay loop muted playsinline controls poster="https://cdn.aceimg.com/310916701.png">
+    <div class="video-wrapper">
 
-        <source src="https://cdn.slicedrive.com/ZW6dCxQP1.mp4" type="video/mp4">
+        <!-- BANNER IKLAN DI ATAS VIDEO -->
+        <div class="banner-top">
 
-    </video>
+            <script type="text/javascript">
+            atOptions = {
+                'key' : 'fe25729a3217cb01fc279e266642530c',
+                'format' : 'iframe',
+                'height' : 50,
+                'width' : 320,
+                'params' : {}
+            };
+            </script>
 
+            <script type="text/javascript"
+            src="https://madmanbikeexcess.com/fe25729a3217cb01fc279e266642530c/invoke.js"></script>
+
+        </div>
+
+        <!-- VIDEO -->
+        <video autoplay loop muted playsinline controls
+        poster="https://cdn.aceimg.com/310916701.png">
+
+            <source src="https://cdn.slicedrive.com/ZW6dCxQP1.mp4"
+            type="video/mp4">
+
+        </video>
+
+    </div>
+
+    <!-- NATIVE ADS DI BAWAH VIDEO -->
+    <div class="native-ad">
+
+        <script async="async" data-cfasync="false"
+        src="https://madmanbikeexcess.com/352485282137c5c2bd110dbbcda5e6de/invoke.js"></script>
+
+        <div id="container-352485282137c5c2bd110dbbcda5e6de"></div>
+
+    </div>
+
+    <!-- BUTTON -->
     <div class="button-area">
 
         <a class="watch-btn"
@@ -111,23 +177,32 @@ video{
 
     </div>
 
-    <div class="ad-box">
-
-        <script type="text/javascript">
-        atOptions = {
-            'key' : 'fe25729a3217cb01fc279e266642530c',
-            'format' : 'iframe',
-            'height' : 50,
-            'width' : 320,
-            'params' : {}
-        };
-        </script>
-
-        <script type="text/javascript" src="https://madmanbikeexcess.com/fe25729a3217cb01fc279e266642530c/invoke.js"></script>
-
-    </div>
-
 </div>
+
+<!-- Histats.com -->
+<div id="histats_counter"></div>
+
+<script type="text/javascript">
+var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,5011723,4,511,95,18,00000000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+
+(function() {
+var hs = document.createElement('script');
+hs.type = 'text/javascript';
+hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();
+</script>
+
+<noscript>
+<a href="/" target="_blank">
+<img src="//sstatic1.histats.com/0.gif?5011723&amp;101"
+alt="" border="0" />
+</a>
+</noscript>
 
 </body>
 </html>
